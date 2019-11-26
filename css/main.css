@@ -1670,6 +1670,7 @@ body {
 
 .qna-item-img--1 img {
   width: 9em !important;
+  height: 9em !important;
 }
 
 .qna-item-img--2 .qna-item-img__caption {
@@ -1682,6 +1683,7 @@ body {
 
 .qna-item-img--2 img {
   width: 9em !important;
+  height: 9em !important;
 }
 
 .qna-item-img--3 .qna-item-img__caption {
