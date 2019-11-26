@@ -1,0 +1,58 @@
+.footer
+  position: relative
+  background-color: #292929
+  padding: 3.75em 0 7.25em
+
+  color: white
+  font-size: .75em
+
+  +sm
+    padding: 2.5em 0
+
+  &__wrap
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+  
+  &__logo
+    height: 2.8em
+
+    +sm
+      height: 2.85em
+  
+  &__link
+    display: inline-block
+    margin: 2.25em 0 1.5em
+
+    text-decoration: underline
+
+    &:hover
+      text-decoration: none
+
+  // Parallax
+  &__parallax1
+    height: 25.4em
+
+    left: 92em
+    top: 156em
+
+    +sm
+      height: 28em
+      left:   62em
+      top:   -12em
+
+  &__parallax2
+    position: absolute
+    z-index: 3
+
+    user-select: none
+    pointer-events: none
+
+    font-size: .42em
+
+    height:    77em
+    left:      65em
+    bottom: -17.2em
+
+    +sm
+      display: none

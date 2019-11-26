@@ -1,0 +1,332 @@
+.qna
+  position: relative
+
+  &.js-disabled
+
+    .qna__item
+      margin-bottom: 2.5em
+
+  &__item
+
+  &-item
+    position: relative
+    z-index: 0
+
+    text-align: center
+
+    &__main-text
+      position: absolute
+      left: 0
+      top:  0
+
+      text-align: left
+
+      +sm
+        position: static
+
+    &__question
+      margin: 0
+
+      +black
+      color: #292929
+      font-size: 2.5em
+      letter-spacing: .025em
+
+      +sm
+        font-size: 1.8em
+
+        br
+          display: none
+    
+    &__answer
+      color: #2c2202
+
+      &::before
+        content: 'Ответ:'
+        display: block
+
+        +black
+    
+    &-img
+      position: absolute
+      z-index: -1
+      left: 50%
+      top:  3.8em
+      transform: translateX(-50%)
+
+      // Modifiers
+      &--1
+
+        .qna-item-img__caption
+          
+          &::before
+            margin-top: 1em
+
+            +sm
+              margin-left: 3em
+              margin-top:  7em
+
+        img
+          width: 9em !important
+
+      &--2 
+
+        .qna-item-img__caption
+          margin-left: 2.5em
+
+          &::before
+            margin-top: 1em
+
+            +sm
+              margin-left: 2.7em
+              margin-top:  6em
+
+        img
+          width:  9em !important
+
+      &--3
+
+        .qna-item-img__caption
+          margin-left: 5em
+
+          +sm
+            margin-left: 4.25em
+
+          &::before
+            top:     6em
+            left: -9.5em
+
+            +sm
+              left: -8em
+              top:   8em
+
+        img
+          width:  6.8em !important
+
+          +sm
+            margin-left: 5em !important
+      
+      &--4
+        top: 4.4em
+        transform: translateX(1em)
+
+        .qna-item-img__caption
+          margin-left: 5em
+          width: 12em
+
+          +sm
+            margin-left: 2.5em
+
+          &::before
+            left: -12em
+            top:    7em
+
+            +sm
+              left: -2em
+
+        img
+          width:  8.8em !important
+      
+      &--5
+        top: 5em
+
+        .qna-item-img__caption
+          margin-left: 4.5em
+          margin-top: -1.6em
+          width: 15em
+
+          +sm
+            margin-left: 2em
+            margin-top: -1em
+            width: 10em
+
+          &::before
+            left: -9em
+            top:   9em
+
+            +sm
+              left: -1em
+              top:  13em
+
+        img
+          width:  8.8em !important
+      
+      &--6
+        top: 5.5em
+
+        .qna-item-img__caption
+          margin-left: 4em
+          width: 15em
+
+          +sm
+            width: 6em
+
+          &::before
+            left: -8em
+            top:   3em
+
+            +sm
+              left: -10em
+              top:    8em
+
+        img
+          width:  8em !important
+      
+      &--7
+        top: 5.5em
+
+        .qna-item-img__caption
+          margin-left: 7em
+          margin-top: -4em
+
+          font-size: .75em
+
+          +sm
+            margin-left: 4.5em
+            margin-top: -0.5em
+            width: 16em
+
+            font-size: .7em
+
+          &::before
+            left: -14.5em
+            top:     18em
+
+            +sm
+              left: -2.5em
+              top:    25em
+        
+        b
+          display: block
+
+          font-size: 1.325em
+          font-weight: normal
+
+        img
+          width:  8em !important
+
+      +sm
+        position: relative
+        display: flex
+        // justify-content: center
+        left: 0 !important
+        top:  0 !important
+        margin: 0 auto !important
+        transform: none !important
+
+        img
+          margin-left: 3em
+
+      &__caption
+        position: absolute
+        left:  100%
+        top:    1em
+        width:  20em
+        margin-left: 2em
+
+        color: #2c2202
+        text-align: left
+
+        +sm
+          left:  12em
+          top:   0
+          width: 11em
+
+          font-size: .9em
+
+          br
+            display: none
+
+        &::before
+          content: ''
+          display: block
+          position: absolute
+          left:  -4em
+          top:  5.5em
+          width: 18.9em
+          height:   9em
+          background: url("../img/qna/line.png") no-repeat center / cover
+
+          font-size: .4em
+
+          +sm
+            font-size: .3em
+    
+    &__btn
+      margin: 14.5em 0 2em
+
+      +sm
+        margin: 1.5em 0 2em
+        padding-left:  2em
+        padding-right: 2em
+  
+  // owl-carousel
+  .owl
+
+    // nav
+    &-prev,
+    &-next
+      display: flex
+      flex-direction: column
+      align-items: center
+
+      position: absolute
+      top:  12em
+
+      text-align: left
+      text-decoration: underline
+
+      &-icon
+        width: 1.8em
+        margin-bottom: .4em
+
+      &:hover
+        text-decoration: none
+      
+      +sm
+        top: 55%
+
+    &-prev
+      left: 0
+
+      +sm
+        left: -1.25em
+
+      &-icon
+        margin-right: auto
+        transform: rotate(90deg)
+    
+    &-next
+      right: 0
+
+      +sm
+        right: -1.25em
+
+      &-icon
+        margin-left: auto
+        transform: rotate(-90deg)
+    
+    // dots
+    &-dot
+      width:  2em
+      height: 2em
+      margin-right: .5em
+      background: #383838 !important
+      border: 0.4em solid transparent
+      border-radius: 50%
+
+      font-size: .425em !important
+
+      &:last-child
+        margin-right: 0
+
+      &.active
+        border: 0.4em solid #383838
+        background: none !important
+
+      &s
+        margin-top: 2em
+
+        display: flex
+        justify-content: center
+        align-items: center

@@ -1,0 +1,76 @@
+.info-box
+  width: 23em
+
+  &::before
+    content: ''
+    display: block
+    position: absolute
+    left:     8.9em
+    bottom: -3.15em
+    width: 1.65em
+    height:   3em
+    background: url("../img/line.png") no-repeat center / contain
+  
+  &.reversed
+    margin-left: -16.5em
+
+    &::before
+      transform: scaleX(-1)
+      left: 18.8em
+    
+    .info-box__learn-more
+      left:  -7.5em
+
+      &::before
+        transform: scaleX(-1)
+        left: 6.35em
+
+  &__row
+    display: flex
+
+    .l,
+    .r
+      width: 50%
+    
+    .l
+      text-align: right
+      margin-right: .25em
+    
+    .r
+      text-align: left
+      margin-left: .25em
+    
+  b
+    +black
+  
+  .bonus-icon
+    height: 1em
+
+  .megabonus-icon
+    height: 1em
+    margin: 0 .1em
+  
+  &__number
+    font-weight: bold
+  
+  &__learn-more
+    position: absolute
+    left:  20.1em
+    top:  -2.45em
+    width: 13em
+
+    text-decoration: underline
+    text-align: left
+
+    &:hover
+      text-decoration: none
+
+    &::before
+      content: ''
+      display: block
+      position: absolute
+      left:   -1.25em
+      bottom: -3.25em
+      width: 1.65em
+      height:   3em
+      background: url("../img/line.png") no-repeat center / contain

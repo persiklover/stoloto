@@ -1,0 +1,31 @@
+$fonts: '../fonts/';
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Black'),
+       local('Roboto-Black'),
+       url($fonts + 'Roboto-Black/Roboto-Black.woff2') format('woff2'),
+       url($fonts + 'Roboto-Black/Roboto-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@mixin black {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'),
+       local('Roboto-Regular'),
+       url($fonts + 'Roboto-Regular/Roboto-Regular.woff2') format('woff2'),
+       url($fonts + 'Roboto-Regular/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin regular {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+}

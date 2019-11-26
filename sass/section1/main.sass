@@ -1,0 +1,82 @@
+@import "logo"
+
+.section1
+  z-index: 1
+  background-color: #292929
+  padding: 6.25em 0 4.4em
+
+  color: white
+
+  +sm
+    padding: 3em 0 2em
+
+  &::after
+    content: ''
+    display: block
+    position: absolute
+    z-index: -2
+    left:   0
+    bottom: 0
+    width: 100%
+    height: 6em
+    background: url("../img/section1/bottom.png") no-repeat bottom / contain
+
+    +sm
+      background-size: 40em
+      bottom: -.05em
+  
+  &-complementary
+    position: relative
+    left: 30.6em
+    top:  -4.4em
+
+    +sm
+      position: static
+      left: auto
+      top:  auto
+      margin-top: 3.25em
+
+      text-align: center
+  
+  &__footer
+    // margin-top: 1em
+    top: 1.5em
+
+    +sm
+      top: 3em
+
+      color: #292929
+  
+  // Parallax
+  &__parallax1
+    right: 23em
+    top:  -10em
+
+    width:  24.6em
+    height: 24.6em
+
+    +sm
+      display: none
+
+  &__parallax2
+    z-index: -1
+    right: -20em
+    top:   -38em
+    height: 108em
+
+    +sm
+      height: 49em
+      top:   -20em
+      left:   -2em
+
+  &__parallax3
+    z-index:  4
+    left:     2em
+    bottom: -17em
+
+    width:  18.7em
+
+    +sm
+      left:   -8em
+      bottom: 36em
+      width:   9em

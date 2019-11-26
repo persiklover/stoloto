@@ -1,0 +1,112 @@
+::selection
+  background-color: #ffcd17
+  
+body
+  background-color: #ffcd17
+
+  +regular
+  // font-size: 2.4em
+  font-size: 1.25vw
+  color: #292929
+
+  +lg
+    // font-size: 2em
+  
+  +md
+    // font-size: 1.5em
+  
+  +sm
+    font-size: 3.6vw
+  
+  +xs
+    // font-size: 1.5em
+
+.container
+  position: relative
+
+.section
+  position: relative
+
+  &__title
+    margin: 0
+    margin: .85em 0 1.1em
+
+    +black
+    font-size: 2.5em
+    letter-spacing: .005em
+
+    +sm
+      font-size: 1.8em
+  
+  &__footer
+    position: relative
+
+    text-align: center
+
+.btn
+  background-color: #ff174e
+  padding: .975em 4.2em
+  border: none
+  border-radius: .5em
+  box-shadow: 0.05em 0.4em .8em rgba(black, 0.54), inset 0 0 .7em rgba(white, 0.41)
+
+  color: white
+  letter-spacing: .025em
+
+  justify-content: center
+  cursor: pointer
+
+  transition: background-color .2s ease-in 
+
+  &:hover
+    background-color: lighten(#ff174e, 10)
+
+.scrolldown
+  position: relative
+  z-index: 2
+
+  display: inline-flex
+  flex-direction: column
+  align-items: center
+
+  text-decoration: underline
+  text-align: center
+
+  cursor: pointer
+
+  &:hover
+    text-decoration: none
+
+  &__icon
+    margin-bottom: .5em
+    height: 2.05em
+
+    +sm
+      order: 1
+      margin-bottom: 0
+      margin-top:    .5em
+  
+  &--reversed
+
+    .scrolldown__icon
+      order: 1
+      margin-bottom: 0
+      margin-top: 2.43em
+
+      +sm
+        margin-top: .5em
+
+.parallax
+  position: absolute
+  z-index: 3
+
+  user-select: none
+  pointer-events: none
+
+  font-size: .42em
+
+.sm-only
+  display: none
+
+  +sm
+    display: block !important

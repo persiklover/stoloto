@@ -1,0 +1,44 @@
+.tabs
+  
+  &-nav
+    list-style: none
+    padding: 0
+    margin: 0
+    display: inline-flex
+    align-items: center
+
+    +sm
+      font-size: .9em
+
+    &__item
+      display: flex
+      align-items: center
+
+      &.active .tabs-nav__btn
+        background-color: #ffd108
+
+        text-decoration: none
+
+      &::after
+        content: '|'
+        margin: 0 .4em
+      
+      &:last-child::after
+        display: none
+
+    &__btn
+      background: none
+      border: none
+      padding: .14em
+
+      text-decoration: underline
+
+      cursor: pointer
+  
+  &-content
+    padding: 1.5em
+
+    text-align: center
+
+    &.hidden
+      display: none
