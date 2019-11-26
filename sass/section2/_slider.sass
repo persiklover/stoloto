@@ -3,8 +3,6 @@
 .slider
   position: relative
   z-index: 0
-  // margin-left:  3em
-  // margin-right: 3em
 
   +sm
     display: none
@@ -20,13 +18,6 @@
     background-color: #292929
     height: .4em
     border-radius: 2em
-
-  &.final &__val-wrap
-    @media (max-width: 1600px)
-      margin-left: -0.5em
-      
-    +lg
-      margin-left: -0.8em
   
   &-mobile
     position: relative
@@ -66,9 +57,15 @@
       margin-left:   0.3em
       margin-top:  -0.05em
 
-      color: #222
+      color: transparent
       +black
       font-size: 2.8em
+
+              background-clip: text
+      -webkit-background-clip: text
+        -moz-background-clip: text
+
+      background-image: linear-gradient(-147deg, #696968 0%, #000 100%)
     
     &__prev,
     &__next
@@ -109,15 +106,24 @@
 
     font-size: 1em !important
 
+    &:focus
+      outline: none
+
+    &::-moz-focus-outer,
+    &::-moz-focus-inner
+      border: 0 !important
+      outline: none !important
+
     +sm
       display: none
 
     =thumb
       width:  6em
       height: 6em
-      background: url("../img/slider-thumb.png") no-repeat center / cover
+      background-color: red
       outline: none
       box-shadow: none
+      border-radius: 50%
 
     &::-webkit-slider-thumb
       -webkit-appearance: none
@@ -128,6 +134,21 @@
 
     &::-ms-thumb
       +thumb
+    
+    @for $i from 1 through 10
+      &[data-val="#{$i}"]
+        &::-webkit-slider-thumb
+          background: url("../img/thumb-"+$i+".png") no-repeat center / cover
+    
+    @for $i from 1 through 10
+      &[data-val="#{$i}"]
+        &::-moz-range-thumb
+          background: url("../img/thumb-"+$i+".png") no-repeat center / cover
+    
+    @for $i from 1 through 10
+      &[data-val="#{$i}"]
+        &::-ms-thumb
+          background: url("../img/thumb-"+$i+".png") no-repeat center / cover
   
   &__val
     display: block
@@ -135,18 +156,6 @@
     transform-origin: center
     // margin-left: -.7em
     // margin-top:  -.2em
-
-    // color: #222
-    +black
-    font-size: 2.5em
-
-            background-clip: text
-    -webkit-background-clip: text
-       -moz-background-clip: text
-
-    background-image: linear-gradient(-147deg, #696968 0%, #000 100%)
-
-    color: transparent
 
     &-wrap
       position: absolute
@@ -159,6 +168,7 @@
       transform-origin: center
       margin-left: -0.25em
       margin-top:  -0.25em
+      display: none
 
       font-size: 1em
       text-align: center
