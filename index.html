@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="ru">
+<head>  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Mobile viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Meta Tags -->
+  <meta name="theme-color" content="#ffcd17">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="@DanGrinberg">
+  <!-- Website Title -->
+  <title></title>
+  <!-- Include CSS -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <main>
+    <section class="section section1" id="section1">
+      <div class="container">
+        <a href="#">
+          <img class="logo" src="img/logo.svg" alt="Столото">
+        </a>
+        <h2 class="section__title section1__title">
+          И друзей — сто,<br>
+          и рублей — миллионы
+        </h2>
+        <p class="section__">
+          Все просто — если ваши друзья<br>
+          еще не зарегистрированы у нас, то приводите<br>
+          их к нам и получайте десятки бонусов!
+        </p>
+  
+        <div class="section1-complementary">
+          <p>
+            А вдруг вы сами<br>
+            еще не зарегистрированы?
+          </p>
+          <a class="btn section1__register" href="https://www.stoloto.ru/registration" target="_blank">Зарегистрироваться</a>
+        </div>
+        <!-- /.section1-complementary -->
+
+        <footer class="section__footer section1__footer">
+          <a class="scrolldown scrolldown--reversed section1__scrolldown" href="#section2">
+            <img class="scrolldown__icon" src="img/arrow-down.svg" alt="">
+            <span class="scrolldown__text">
+              Узнать<br>
+              сколько бонусов
+            </span>
+          </a>
+        </footer>
+        <!-- /.section__footer section1__footer -->
+
+        <img
+          class="section1__parallax1 parallax js-parallax" data-parallax-speed="1.5"
+          src="img/section1/parallax1.png" alt="">
+        <img
+          class="section1__parallax2 parallax js-parallax" data-parallax-speed="-3.5"
+          src="img/section1/parallax2.png" alt="">
+        <img
+          class="section1__parallax3 parallax js-parallax" data-parallax-speed="3.5"
+          src="img/section1/parallax3.png" alt="">
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <section class="section section2" id="section2">
+      <div class="container">
+        <h2 class="section__title section2__title">
+          Больше друзей —<br>
+          больше бонусов
+        </h2>
+
+        <div class="slider section2__slider">
+          <input class="slider__input" type="range" value="1" min="1" max="10" step="1">
+
+          <span class="slider__val-wrap">
+            <span class="slider__val">1</span>
+          </span>
+
+          <ul class="slider-dots" aria-hidden="true">
+            <li class="slider-dots__item"></li>
+            <li class="slider-dots__item"></li>
+            <li class="slider-dots__item"></li>
+            <li class="slider-dots__item"></li>
+            <li class="slider-dots__item"></li>
+            <li class="slider-dots__item"></li>
+            <li class="slider-dots__item"></li>
+            <li class="slider-dots__item"></li>
+            <li class="slider-dots__item"></li>
+            <li class="slider-dots__item"></li>
+          </ul>
+          <!-- /.slider-dots -->
+
+          <div class="info-box slider__info-box">
+            <div class="info-box__row">
+              <div class="l"></div>
+              <div class="r js-friends-number">
+                <b>1</b> друг
+              </div>
+            </div>
+            <div class="info-box__row">
+              <div class="l bonus-icon-wrap">
+                <img class="bonus-icon" src="img/bonus.svg" alt="">
+              </div>
+              <div class="r js-bonus-number">
+                <b>9</b> бонусов
+              </div>
+            </div>
+            <div class="info-box__row">
+              <div class="l megabonus-icon-wrap">
+                <img class="megabonus-icon" src="img/barrel.svg" alt="">
+              </div>
+              <div class="r js-megabonus-number">
+                <b>1</b> спецпбонус
+              </div>
+            </div>
+
+            <a class="info-box__learn-more" href="#" target="_blank">
+              Узнайте,<br>
+              что дают эти бонусы
+            </a>
+          </div>
+          <!-- /.info-box -->
+
+        </div>
+        <!-- /.slider section2__slider -->
+
+        <div class="slider-mobile section2__slider-mobile">
+          <img class="slider-mobile__thumb" src="img/slider-thumb.png" alt="">
+          <span class="slider-mobile__val">1</span>
+
+          <button class="slider-mobile__prev js-slider-mobile-prev">
+            <img class="slider-mobile__prev-icon" src="img/arrow-down.svg" alt="">
+            <span class="visually-hidden">Убрать друга</span>
+          </button>
+          <button class="slider-mobile__next js-slider-mobile-next">
+            <img class="slider-mobile__next-icon" src="img/arrow-down.svg" alt="">
+            <span class="visually-hidden">Добавить друга</span>
+          </button>
+
+          <div class="info-box slider-mobile__info-box">
+            <div class="info-box__row">
+              <div class="l"></div>
+              <div class="r js-mobile-friends-number">
+                <b>1</b> друг
+              </div>
+            </div>
+            <div class="info-box__row">
+              <div class="l bonus-icon-wrap">
+                <img class="bonus-icon" src="img/bonus.svg" alt="">
+              </div>
+              <div class="r js-mobile-bonus-number">
+                <b>9</b> бонусов
+              </div>
+            </div>
+            <div class="info-box__row">
+              <div class="l megabonus-mobile-icon-wrap">
+                <img class="megabonus-icon" src="img/barrel.svg" alt="">
+              </div>
+              <div class="r js-mobile-megabonus-number">
+                <b>1</b> спецпбонус
+              </div>
+            </div>
+          
+            <a class="info-box__learn-more" href="#" target="_blank">
+              Узнайте,<br>
+              что дают эти бонусы
+            </a>
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.slider-mobile section2__slider-mobile -->
+
+        <figure class="section2-like">
+          <img class="section2-like__img" src="img/section2/like.png" alt="">
+          <figcaption class="section2-like__caption">
+            Уж точно лучше,<br>
+            чем в инстаграме лайки<br>
+            ставить
+          </figcaption>
+        </figure>
+
+        <a class="btn section1__register" href="https://www.stoloto.ru/registration" target="_blank">Позвать друзей</a>
+
+        <footer class="section__footer section2__footer">
+          <a class="scrolldown section2__scrolldown" href="#section3">
+            <img class="scrolldown__icon" src="img/arrow-down.svg" alt="">
+            <span class="scrolldown__text">
+              Время<br>
+              действовать!
+            </span>
+          </a>
+        </footer>
+        <!-- /.section__footer section1__footer -->
+
+        <img class="section2__parallax1 parallax js-parallax" data-parallax-speed="2" 
+             src="img/section2/parallax1.png" alt="">
+        <img class="section2__parallax2 parallax js-parallax" data-parallax-speed="1" 
+             src="img/section2/parallax2.png" alt="">
+        <img class="section2__parallax3 parallax js-parallax" data-parallax-speed="-3" 
+             src="img/section2/parallax3.png" alt="">
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <section class="section section3" id="section3">
+      <div class="container">
+        <div class="section3__wrap">
+          <h2 class="section__title section3__title">
+            Хороший друг —<br>
+            это выгодный друг
+          </h2>
+
+          <div class="tabs js-disabled">
+            <header class="tabs-header">
+              Пригласить:
+              <ul class="tabs-nav">
+                <li class="tabs-nav__item active">
+                  <button class="tabs-nav__btn">через соцсети</button>
+                </li>
+                <li class="tabs-nav__item">
+                  <button class="tabs-nav__btn">по ссылке</button>
+                </li>
+                <li class="tabs-nav__item">
+                  <button class="tabs-nav__btn">по почте</button>
+                </li>
+              </ul>
+            </header>
+            <!-- ./tabs-header -->
+
+            <div class="tabs-content">
+              <div class="section3__socials-wrap">
+                <h3 class="section3__socials-title">
+                  Выберите соцсеть, где у вас самые<br>
+                  отзывчивые друзья
+                </h3>
+                <ul class="socials section3__socials" aria-label="Социальные сети">
+                  <li class="socials__item">
+                    <a href="#" aria-label="Twitter">
+                      <img class="socials__icon" src="img/socials/tw.svg" alt="">
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" aria-label="ВКонтакте">
+                      <img class="socials__icon" src="img/socials/vk.svg" alt="">
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" aria-label="Facebook">
+                      <img class="socials__icon" src="img/socials/fb.svg" alt="">
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" aria-label="Одноклассники">
+                      <img class="socials__icon" src="img/socials/ok.svg" alt="">
+                    </a>
+                  </li>
+                </ul>
+                <!-- ./socials -->
+              </div>
+              <!-- /.section3__socials-wrap -->
+            </div>
+            <!-- /.tabs-content -->
+            
+            <div class="tabs-content">
+              <h3 class="section3__socials-title">
+                По ссылке
+              </h3>
+            </div>
+            <!-- /.tabs-content -->
+            
+            <div class="tabs-content">
+              <h3 class="section3__socials-title">
+                По почте
+              </h3>
+            </div>
+            <!-- /.tabs-content -->
+
+          </div>
+          <!-- /.tabs -->
+        </div>
+        <!-- /.section3__wrap -->
+
+        <footer class="section__footer section3__footer">
+          <a class="scrolldown section3__scrolldown" href="#section4">
+            <img class="scrolldown__icon" src="img/arrow-down.svg" alt="">
+            <span class="scrolldown__text">
+              Крутите,<br>
+              если остались<br>
+              вопросы
+            </span>
+          </a>
+        </footer>
+        <!-- /.section__footer section3__footer -->
+
+        <img class="section3__parallax1 parallax js-parallax" data-parallax-speed="0.85" 
+             src="img/section3/parallax1.png" alt="">
+        <img class="section3__parallax2 parallax js-parallax" data-parallax-speed="1.5" 
+             src="img/section3/parallax2.png" alt="">
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <section class="section section4" id="section4">
+      <div class="container">
+        <h2 class="section__title section4__title">Важные вопросы:</h2>
+
+        <div class="qna section4__qna js-disabled">
+
+          <div class="qna-item qna__item">
+            <div class="qna-item__main-text">
+              <h3 class="qna-item__question">Кого можно позвать?</h3>
+              <p class="qna-item__answer">
+                Приглашайте друзей и близких,<br>
+                которые ещё не зарегистрировались<br>
+                на сайте <a href="http://stoloto.ru">stoloto.ru</a>
+              </p>
+            </div>
+            <!-- /.qna-item__main-text -->
+
+            <figure class="qna-item-img qna-item-img--1">
+              <img src="img/qna/1.png" alt="">
+              <figcaption class="qna-item-img__caption">
+                А вот котов звать нельзя,<br>
+                даже если они ну очень близкие
+              </figcaption>
+            </figure>
+
+            <a class="btn qna-item__btn" href="https://www.stoloto.ru/registration" target="_blank">Понятно, позвать человеков</a>
+          </div>
+          <!-- /.qna-item.qna__item -->
+          
+          <div class="qna-item qna__item">
+            <div class="qna-item__main-text">
+              <h3 class="qna-item__question">Сколько бонусов я получу?</h3>
+              <p class="qna-item__answer">
+                За каждого участника, купившего билеты<br>
+                на сумму от 150 рублей в течение трёх<br>
+                дней по вашему приглашению,<br>
+                вы получите 1 спецбонус и 9 бонусов.
+              </p>
+            </div>
+            <!-- /.qna-item__main-text -->
+
+            <figure class="qna-item-img qna-item-img--2">
+              <img src="img/qna/2.png" alt="">
+              <figcaption class="qna-item-img__caption">
+                Никаких сюрпризов,<br>
+                сплошная приятная предсказуемость!
+              </figcaption>
+            </figure>
+
+            <a class="btn qna-item__btn" href="https://www.stoloto.ru/registration" target="_blank">Понятно, позвать человеков</a>
+          </div>
+          <!-- /.qna-item.qna__item -->
+
+          <div class="qna-item qna__item">
+            <div class="qna-item__main-text">
+              <h3 class="qna-item__question">На что я могу потратить бонусы?</h3>
+              <p class="qna-item__answer">
+                Бонусами и спецбонусами можно<br>
+                оплачивать лотерейные билеты.<br>
+                А каждый билет это ваш шанс<br>
+                выиграть дом, квартиру, автомобиль<br>
+                или миллионы рублей.
+              </p>
+            </div>
+            <!-- /.qna-item__main-text -->
+          
+            <figure class="qna-item-img qna-item-img--3">
+              <img src="img/qna/3.png" alt="">
+              <figcaption class="qna-item-img__caption">
+                Почти как деньги,<br>
+                только бонусы
+              </figcaption>
+            </figure>
+          
+            <a class="btn qna-item__btn" href="https://www.stoloto.ru/registration" target="_blank">Cтать бонусолионером</a>
+          </div>
+          <!-- /.qna-item.qna__item -->
+
+          <div class="qna-item qna__item">
+            <div class="qna-item__main-text">
+              <h3 class="qna-item__question">
+                Сколько друзей я могу<br>
+                пригласить в день?
+              </h3>
+              <p class="qna-item__answer">
+                По почте можно приглашать до 10 друзей<br>
+                в день. С помощью ссылки или социальных<br>
+                сетей вы можно звать сколько захотите друзей.
+              </p>
+            </div>
+            <!-- /.qna-item__main-text -->
+          
+            <figure class="qna-item-img qna-item-img--4">
+              <img src="img/qna/4.png" alt="">
+              <figcaption class="qna-item-img__caption">
+                Так вот в чем смысл<br>
+                дружбы!
+              </figcaption>
+            </figure>
+          
+            <a class="btn qna-item__btn" href="https://www.stoloto.ru/registration" target="_blank">Звать друзей скорее</a>
+          </div>
+          <!-- /.qna-item.qna__item -->
+
+          <div class="qna-item qna__item">
+            <div class="qna-item__main-text">
+              <h3 class="qna-item__question">Что получит мой друг?</h3>
+              <p class="qna-item__answer">
+                Ваш друг получит количество бонусов,<br>
+                равное стоимости минимальной лотерейной<br>
+                ставки самого дорогого билета<br>
+                из его первой покупки.
+              </p>
+            </div>
+            <!-- /.qna-item__main-text -->
+          
+            <figure class="qna-item-img qna-item-img--5">
+              <img src="img/qna/5.png" alt="">
+              <figcaption class="qna-item-img__caption">
+                Потом друг еще мемуары<br>
+                напишет, как получил<br>
+                первый бонус
+              </figcaption>
+            </figure>
+          
+            <a class="btn qna-item__btn" href="https://www.stoloto.ru/registration" target="_blank">Посоветовать другу</a>
+          </div>
+          <!-- /.qna-item.qna__item -->
+
+          <div class="qna-item qna__item">
+            <div class="qna-item__main-text">
+              <h3 class="qna-item__question">
+                Сколько времени<br>
+                действуют бонусы?
+              </h3>
+              <p class="qna-item__answer">
+                Спецбонус действует 10 дней.<br>
+                Бонусы действуют полгода.
+              </p>
+            </div>
+            <!-- /.qna-item__main-text -->
+          
+            <figure class="qna-item-img qna-item-img--6">
+              <img src="img/qna/6.png" alt="">
+              <figcaption class="qna-item-img__caption">
+                Кто успел — тот и съел
+              </figcaption>
+            </figure>
+          
+            <a class="btn qna-item__btn" href="https://www.stoloto.ru/registration" target="_blank">Поторопиться</a>
+          </div>
+          <!-- /.qna-item.qna__item -->
+
+          <div class="qna-item qna__item">
+            <div class="qna-item__main-text">
+              <h3 class="qna-item__question">
+                Кто может отправить<br>
+                приглашение?
+              </h3>
+              <p class="qna-item__answer">
+                Вы можете приглашать друзей, если у вас<br>
+                есть личный кабинет и вы покупали<br>
+                лотерейные билеты на сайте <a href="http://stoloto.ru">stoloto.ru</a>
+              </p>
+            </div>
+            <!-- /.qna-item__main-text -->
+          
+            <figure class="qna-item-img qna-item-img--7">
+              <img src="img/qna/7.png" alt="">
+              <figcaption class="qna-item-img__caption">
+                <b>YES! You can!*</b>
+                * Да, ты можешь.<br><br class="sm-only">
+                Тут мы шутим одновременно<br>
+                над старым плакатом и плакатом<br>
+                предвыборной кампании президента<br>
+                Обамы
+              </figcaption>
+            </figure>
+          
+            <a class="btn qna-item__btn" href="https://www.stoloto.ru/registration" target="_blank">Воспользоваться правом</a>
+          </div>
+          <!-- /.qna-item.qna__item -->
+
+        </div>
+        <!-- /.qna -->
+
+      </div>
+      <!-- /.container -->
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrap">
+        <a href="#">
+          <img class="logo footer__logo" src="img/logo.svg" alt="Столото">
+        </a>
+  
+        <a class="footer__link" href="http://www.stoloto.ru/files/documents/politika_v_otnoshenii_obrabotki_personalnyh_dannyh.pdf" target="_blank">
+          Политика в отношении обработки<br>
+          персональных данных
+        </a>
+  
+        <small>© 2019 АО «ТК «Центр»</small>
+      </div>
+      <!-- /.footer__wrap -->
+
+      <img 
+        class="footer__parallax1 parallax js-parallax" data-parallax-speed="2" 
+        src="img/footer/parallax1.png" alt="">
+      <img 
+        class="footer__parallax2" data-parallax-speed="-3.5" 
+        src="img/footer/parallax2.png" alt="">
+
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/owlcarousel/js/owl.carousel.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <!-- made by: https://github.com/persiklover -->
+</body>
+</html>
