@@ -1682,8 +1682,10 @@ body {
 }
 
 .qna-item-img--2 img {
-  width: 9em !important;
-  height: 9em !important;
+  width: 44.2em !important;
+  height: 30.8em !important;
+  margin-top: -2.75em;
+  font-size: .4em;
 }
 
 .qna-item-img--3 .qna-item-img__caption {
@@ -2197,6 +2199,12 @@ body {
   .qna-item-img--2 .qna-item-img__caption::before {
     margin-left: 2.7em;
     margin-top: 6em;
+  }
+
+  .qna-item-img--2 img {
+    -webkit-transform: translateX(-4.8em);
+        -ms-transform: translateX(-4.8em);
+            transform: translateX(-4.8em);
   }
 
   .qna-item-img--3 .qna-item-img__caption {
