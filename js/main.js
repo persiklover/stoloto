@@ -132,10 +132,6 @@ $(function() {
   $(".slider__input").on("input", function() {
     var val = this.value;
     $(this).attr("data-val", val);
-      // .next();
-      // .css("left", ((val - 1) * 4.85) + ((val) * .2) + "em")
-      // .find(".slider__val")
-        // .text(val);
     
     var $infoBox = $(this).siblings(".info-box"); 
     if (val >= 7) {
@@ -147,7 +143,6 @@ $(function() {
 
     var $slider = $(".slider");
     if (val == 10) {
-      console.log('!');
       $slider.addClass("final");
     }
     else {
