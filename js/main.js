@@ -138,7 +138,7 @@ $(function() {
         // .text(val);
     
     var $infoBox = $(this).siblings(".info-box"); 
-    if (val >= 8) {
+    if (val >= 7) {
       $infoBox.addClass("reversed");
     }
     else {
@@ -212,5 +212,13 @@ $(function() {
     }
 
     updateThumbMobile(val);
+  });
+
+  $(".js-close-popup").click(function() {
+    $(".learn-more__popup").addClass("hidden");
+  });
+  
+  $(".js-open-popup").click(function() {
+    $(".learn-more__popup").removeClass("hidden");
   });
 });

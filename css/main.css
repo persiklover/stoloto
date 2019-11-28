@@ -890,14 +890,18 @@ body {
 }
 
 .info-box.reversed .info-box__learn-more {
-  left: -7.5em;
+  left: -10.5em;
 }
 
 .info-box.reversed .info-box__learn-more::before {
   -webkit-transform: scaleX(-1);
       -ms-transform: scaleX(-1);
           transform: scaleX(-1);
-  left: 6.35em;
+  left: 9.35em;
+}
+
+.info-box.reversed .learn-more__popup {
+  left: -20.6em;
 }
 
 .info-box__row {
@@ -943,16 +947,28 @@ body {
   position: absolute;
   left: 20.1em;
   top: -2.45em;
+}
+
+.learn-more {
   width: 13em;
-  text-decoration: underline;
+  background: none;
+  border: none;
+  padding: 0;
   text-align: left;
 }
 
-.info-box__learn-more:hover {
+.learn-more span {
+  cursor: pointer;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dashed;
+          text-decoration-style: dashed;
+}
+
+.learn-more span:hover {
   text-decoration: none;
 }
 
-.info-box__learn-more::before {
+.learn-more::before {
   content: '';
   display: block;
   position: absolute;
@@ -963,9 +979,50 @@ body {
   background: url("../img/line.png") no-repeat center/contain;
 }
 
+.learn-more__popup {
+  position: absolute;
+  left: 20em;
+  top: -6em;
+  width: 20em;
+  padding: 1.5em 1.75em;
+  border-radius: 1rem;
+  border: 0.6rem solid #292929;
+  background-color: #ffcd17;
+  color: #292929;
+  font-weight: 300;
+  -webkit-transition: opacity .3s ease-in;
+  -o-transition: opacity .3s ease-in;
+  transition: opacity .3s ease-in;
+  will-change: opacity;
+}
+
+.learn-more__popup.hidden {
+  opacity: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
+.learn-more__popup p {
+  margin: 0;
+  text-align: left;
+}
+
+.learn-more__close {
+  position: absolute;
+  top: 0;
+  right: 0.45em;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 1.7em;
+  cursor: pointer;
+}
+
 .slider {
   position: relative;
-  z-index: 0;
 }
 
 .slider::before {
@@ -1367,6 +1424,7 @@ body {
 
 .slider__info-box {
   position: absolute;
+  z-index: 999;
   left: 8.5em;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -1538,6 +1596,10 @@ body {
 
 .tabs-content.hidden {
   display: none;
+}
+
+.tabs-content h3 {
+  font-weight: normal;
 }
 
 .section3 {
