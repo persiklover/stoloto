@@ -1,117 +1,46 @@
 ::selection
-  background-color: #ffcd17
+  background-color: $text-color 
+  color: $body-bg-color
   
 body
-  background-color: #ffcd17
-
-  +regular
-  // font-size: 2.4em
-  font-size: 1.25vw
-  color: #292929
-
-  +lg
-    // font-size: 2em
-  
-  +md
-    // font-size: 1.5em
-  
-  +sm
-    font-size: 3.6vw
-  
-  +xs
-    // font-size: 1.5em
-
-.container
-  position: relative
-
-.section
-  position: relative
-
-  &__title
-    margin: 0
-    margin: .85em 0 1.1em
-
-    +black
-    font-size: 2.5em
-    letter-spacing: .005em
-
-    +sm
-      font-size: 1.8em
-  
-  &__footer
-    position: relative
-
-    text-align: center
-
-.btn
-  background-color: #ff174e
-  padding: .975em 4.2em
-  border: none
-  border-radius: .5em
-  box-shadow: 0.05em 0.4em .8em rgba(black, 0.54), inset 0 0 .7em rgba(white, 0.41)
-
-  color: white
-  letter-spacing: .025em
-
-  justify-content: center
-  cursor: pointer
-
-  transition: background-color .2s ease-in 
-
-  &:hover
-    background-color: lighten(#ff174e, 10)
+  color: $text-color
+  +roboto
+  font-size: 2rem
 
 .scrolldown
-  position: relative
-  z-index: 2
-
-  display: inline-flex
+  border-radius: 50%
+  display: flex
   flex-direction: column
   align-items: center
 
-  text-decoration: underline
-  text-align: center
+  font-size: 2.4rem
 
-  cursor: pointer
+  &:hover,
+  &:focus
+    .scrolldown-img-wrap
+      transform: scale(1.3)
 
-  &:hover
-    text-decoration: none
+  &-img
+    width:  2.5rem
+    height: 2.8rem
+    &-wrap
+      margin-top: 2rem
+      display: flex
+      justify-content: center
+      align-items: center
+      width:  4.8rem
+      height: 4.8rem
+      background-color: #ffcd18
+      border-radius: 50%
 
-  &__icon
-    margin-bottom: .5em
-    height: 2.05em
-
-    +sm
-      order: 1
-      margin-bottom: 0
-      margin-top:    .5em
-  
-  &--reversed
-
-    .scrolldown__icon
-      order: 1
-      margin-bottom: 0
-      margin-top: 2.43em
-
-      +sm
-        margin-top: .5em
-
-.parallax
-  position: absolute
-  z-index: 3
-
-  user-select: none
-  pointer-events: none
-
-  font-size: .42em
+      transition: transform .15s ease-in
+      will-change: transform
 
 .sm-only
   display: none
-
   +sm
-    display: block !important
+    display: block
 
 .hide-sm
-  
   +sm
     display: none

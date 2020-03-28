@@ -1,562 +1,464 @@
 <!doctype html>
 <html lang="ru">
-<head>  
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- Mobile viewport -->
+  <!-- Mobile viewport-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Meta Tags -->
-  <meta name="theme-color" content="#ffcd17">
+  <!-- Meta Tags-->
+  <meta name="theme-color" content="#292929">
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <meta name="author" content="https://github.com/persiklover">
+  <meta name="author" content="">
   <!-- Website Title -->
-  <title>Приглашай друзей — получай бонусы от Столото!</title>
+  <title></title>
   <!-- Website Icon -->
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" sizes="192x192" type="image/x-icon" href="android-chrome-192x192.png">
+  <link rel="icon" sizes="512x512" type="image/x-icon" href="android-chrome-512x512.png">
   <link rel="icon" sizes="32x32" type="image/png" href="favicon-32x32.png">
   <link rel="icon" sizes="16x16" type="image/png" href="favicon-16x16.png">
-  <!-- Include CSS -->
-  <link rel="stylesheet" href="css/main.css?v=3">
+  <!-- Include CSS-->
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <main>
-    <section class="section section1" id="section1">
+  <main class="main">
+    <section class="section1" id="section1">
       <div class="container">
-        <a href="https://www.stoloto.ru" target="_blank">
-          <img class="logo" src="img/logo.svg" alt="Столото">
-        </a>
-        <h2 class="section__title section1__title">
-          Выигрывать проще<br>
-          вместе с друзьями!
-        </h2>
-        <p class="section__">
-          Регистрируйтесь, приглашайте друзей<br>
-          и получайте бонусы, которые можно обменять<br>
-          на лотерейные билеты.
-        </p>
   
-        <div class="section1-complementary">
-          <p>
-            Зарегистрируйтесь,<br>
-            чтобы позвать друзей
-          </p>
-          <a class="btn section1__register" href="https://www.stoloto.ru/registration" target="_blank">
-            Зарегистрироваться
+        <header class="section1-header section1__header">
+          <a class="logo" href="#" target="_blank">
+            <img class="logo__img" src="img/logo.png" alt="Столото">
           </a>
-        </div>
-        <!-- /.section1-complementary -->
-
-        <footer class="section__footer section1__footer">
-          <a class="scrolldown scrolldown--reversed section1__scrolldown" href="#section2">
-            <img class="scrolldown__icon" src="img/arrow-down.svg" alt="">
-            <span class="scrolldown__text">
-              Больше друзей –<br class="sm-only"> больше бонусов!
-            </span>
-          </a>
-        </footer>
-        <!-- /.section__footer section1__footer -->
-
-        <img
-          class="section1__parallax1 parallax js-parallax" data-parallax-speed="1.5"
-          src="img/section1/parallax1.png" alt="">
-        <img
-          class="section1__parallax2 parallax js-parallax" data-parallax-speed="-3.5"
-          src="img/section1/parallax2.png" alt="">
-        <img
-          class="section1__parallax3 parallax js-parallax" data-parallax-speed="3.5"
-          src="img/section1/parallax3.png" alt="">
-      </div>
-      <!-- /.container -->
-    </section>
-
-    <section class="section section2" id="section2">
-      <div class="container">
-        <h2 class="section__title section2__title">
-          Узнай,<br class="hide-sm">
-          сколько бонусов<br>
-          ты получишь
-        </h2>
-
-        <div class="slider section2__slider">
-          <input class="slider__input" type="range" value="1" data-val="1" min="1" max="10" step="1">
-
-          <span class="slider__val-wrap">
-            <span class="slider__val">1</span>
-          </span>
-
-          <ul class="slider-dots" aria-hidden="true">
-            <li class="slider-dots__item"></li>
-            <li class="slider-dots__item"></li>
-            <li class="slider-dots__item"></li>
-            <li class="slider-dots__item"></li>
-            <li class="slider-dots__item"></li>
-            <li class="slider-dots__item"></li>
-            <li class="slider-dots__item"></li>
-            <li class="slider-dots__item"></li>
-            <li class="slider-dots__item"></li>
-            <li class="slider-dots__item"></li>
-          </ul>
-          <!-- /.slider-dots -->
-
-          <div class="info-box slider__info-box">
-            <div class="info-box__row">
-              <div class="l"></div>
-              <div class="r js-friends-number">
-                <b>1</b> друг
-              </div>
+    
+          <h2 class="section1-title section1__title">
+            <b>Самые популярные<br class="sm-only"> российские лотереи!</b>
+            Доказано:<br class="sm-only"> <strong>в них выигрывают!</strong>
+          </h2>
+        </header>
+        <!-- /.section1-header -->
+  
+        <ul class="loteries">
+          <li class="loteries-item">
+            <div class="loteries-item__img-wrap">
+              <img class="loteries-item__img loteries-item__img--1" src="img/loteries/1.png" alt="">
             </div>
-            <div class="info-box__row">
-              <div class="l bonus-icon-wrap">
-                <img class="bonus-icon" src="img/bonus.svg" alt="">
-              </div>
-              <div class="r js-bonus-number">
-                <b>9</b> бонусов
-              </div>
+            <!-- /.loteries-item__img-wrap -->
+            <h3 class="loteries-item__title">
+              Джекпот:
+              <span class="loteries-item__money">
+                700 000 000 <span aria-label="рублей" title="рублей">₽</span>
+              </span>
+            </h3>
+            <p class="loteries-item__description">
+              Легендарная лотерея<br>
+              С 25-летней историей.<br>
+              <b>Цена билета — от 100<span aria-label="рублей" title="рублей">₽</span></b>
+            </p>
+            <button class="loteries-item__btn">Купить билет</button>
+            <button class="loteries-item__more js-show-info">Подробнее</button>
+  
+            <div class="loteries-item-overlay">
+              <button class="loteries-item-overlay__btn js-hide-info" aria-label="Закрыть подсказку">
+                &times;
+              </button>
+              <p class="loteries-item-overlay__text">
+                Лотерея с крупнейшим<br>
+                разыгранным<br>
+                суперпризом<br>
+                в истории российских<br>
+                лотерей – 1 миллиард ₽
+              </p>
             </div>
-            <div class="info-box__row">
-              <div class="l megabonus-icon-wrap">
-                <img class="megabonus-icon" src="img/barrel.svg" alt="">
-              </div>
-              <div class="r js-megabonus-number">
-                <b>1</b> спецбонус
-              </div>
-            </div>
-
-            <button class="learn-more info-box__learn-more js-open-popup" aria-label="Узнать о бонусах">
-              Бонусы и спецбонусы<br>
-              можно обменять<br>
-              на лотерейные билеты.
-            </button>
-          </div>
-          <!-- /.info-box -->
-
-        </div>
-        <!-- /.slider section2__slider -->
-
-        <div class="slider-mobile section2__slider-mobile">
-          <img class="slider-mobile__thumb" src="img/slider-thumb.png" alt="">
-          <span class="slider-mobile__val">1</span>
-
-          <button class="slider-mobile__prev js-slider-mobile-prev">
-            <img class="slider-mobile__prev-icon" src="img/arrow-down.svg" alt="">
-            <span class="visually-hidden">Убрать друга</span>
-          </button>
-          <button class="slider-mobile__next js-slider-mobile-next">
-            <img class="slider-mobile__next-icon" src="img/arrow-down.svg" alt="">
-            <span class="visually-hidden">Добавить друга</span>
-          </button>
-
-          <div class="info-box slider-mobile__info-box">
-            <div class="info-box__row">
-              <div class="l"></div>
-              <div class="r js-mobile-friends-number">
-                <b>1</b> друг
-              </div>
-            </div>
-            <div class="info-box__row">
-              <div class="l bonus-icon-wrap">
-                <img class="bonus-icon" src="img/bonus.svg" alt="">
-              </div>
-              <div class="r js-mobile-bonus-number">
-                <b>9</b> бонусов
-              </div>
-            </div>
-            <div class="info-box__row">
-              <div class="l megabonus-mobile-icon-wrap">
-                <img class="megabonus-icon" src="img/barrel.svg" alt="">
-              </div>
-              <div class="r js-mobile-megabonus-number">
-                <b>1</b> спецпбонус
-              </div>
-            </div>
+            <!-- /.overlay -->
+          </li>
+          <!-- /.loteries-item -->
           
-            <button class="learn-more info-box__learn-more js-open-popup" aria-label="Узнать о бонусах">
-              Бонусы и спецбонусы<br>
-              можно обменять<br>
-              на лотерейные билеты.
-            </button>
-            
+          <li class="loteries-item">
+            <div class="loteries-item__img-wrap">
+              <img class="loteries-item__img loteries-item__img--2" src="img/loteries/2.png" alt="">
+            </div>
+            <!-- /.loteries-item__img-wrap -->
+            <h3 class="loteries-item__title">
+              Суперприз:
+              <span class="loteries-item__money">
+                306 644 392 <span aria-label="рублей" title="рублей">₽</span>
+              </span>
+            </h3>
+            <p class="loteries-item__description">
+              Сорвите<br>
+              большой куш!<br>
+              <b>Цена билета — от 100<span aria-label="рублей" title="рублей">₽</span></b>
+            </p>
+            <button class="loteries-item__btn">Хочу миллиноны</button>
+            <button class="loteries-item__more js-show-info">Подробнее</button>
+  
+            <div class="loteries-item-overlay">
+              <button class="loteries-item-overlay__btn js-hide-info" aria-label="Закрыть подсказку">
+                &times;
+              </button>
+              <p class="loteries-item-overlay__text">
+                Лотерея с крупнейшим<br>
+                разыгранным<br>
+                суперпризом<br>
+                в истории российских<br>
+                лотерей – 1 миллиард ₽
+              </p>
+            </div>
+            <!-- /.overlay -->
+          </li>
+          <!-- /.loteries-item -->
+  
+          <li class="loteries-item">
+            <div class="loteries-item__img-wrap">
+              <img class="loteries-item__img loteries-item__img--3" src="img/loteries/3.png" alt="">
+            </div>
+            <!-- /.loteries-item__img-wrap -->
+            <h3 class="loteries-item__title">
+              Суперприз:
+              <span class="loteries-item__money">
+                1 020 567 <span aria-label="рублей" title="рублей">₽</span>
+              </span>
+            </h3>
+            <p class="loteries-item__description">
+              Сотни победителей<br>
+              каждые 15 минут.<br>
+              <b>Цена билета — от 100<span aria-label="рублей" title="рублей">₽</span></b>
+            </p>
+            <button class="loteries-item__btn">Стать следующим</button>
+            <button class="loteries-item__more js-show-info">Подробнее</button>
+          
+            <div class="loteries-item-overlay">
+              <button class="loteries-item-overlay__btn js-hide-info" aria-label="Закрыть подсказку">
+                &times;
+              </button>
+              <p class="loteries-item-overlay__text">
+                Лотерея с крупнейшим<br>
+                разыгранным<br>
+                суперпризом<br>
+                в истории российских<br>
+                лотерей – 1 миллиард ₽
+              </p>
+            </div>
+            <!-- /.overlay -->
+          </li>
+          <!-- /.loteries-item -->
+  
+          <li class="loteries-item">
+            <div class="loteries-item__img-wrap">
+              <img class="loteries-item__img loteries-item__img--4" src="img/loteries/4.png" alt="">
+            </div>
+            <!-- /.loteries-item__img-wrap -->
+            <h3 class="loteries-item__title">
+              Суперприз:
+              <span class="loteries-item__money">
+                121 496 097 <span aria-label="рублей" title="рублей">₽</span>
+              </span>
+            </h3>
+            <p class="loteries-item__description">
+              Более 10 лет<br>
+              многомиллионных выигрышей.<br>
+              <b>Цена билета — от 100<span aria-label="рублей" title="рублей">₽</span></b>
+            </p>
+            <button class="loteries-item__btn">К миллионам!</button>
+            <button class="loteries-item__more js-show-info">Подробнее</button>
+          
+            <div class="loteries-item-overlay">
+              <button class="loteries-item-overlay__btn js-hide-info" aria-label="Закрыть подсказку">
+                &times;
+              </button>
+              <p class="loteries-item-overlay__text">
+                Лотерея с крупнейшим<br>
+                разыгранным<br>
+                суперпризом<br>
+                в истории российских<br>
+                лотерей – 1 миллиард ₽
+              </p>
+            </div>
+            <!-- /.overlay -->
+          </li>
+          <!-- /.loteries-item -->
+        </ul>
+        <!-- /.loteries -->
+  
+        <a class="scrolldown section1__scrolldown" href="#section2">
+          <span>Подробнее о каждой лотерее</span>
+          <div class="scrolldown-img-wrap">
+            <img class="scrolldown-img" src="img/arrow.png" alt="">
           </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.slider-mobile section2__slider-mobile -->
-
-        <figure class="section2-like">
-          <img class="section2-like__img" src="img/section2/like.png" alt="">
-          <figcaption class="section2-like__caption">
-            Уж точно лучше,<br>
-            чем в инстаграме лайки<br>
-            ставить
-          </figcaption>
-        </figure>
-
-        <a class="btn section1__register" href="https://www.stoloto.ru/registration" target="_blank">
-          Позвать друзей
         </a>
 
-        <footer class="section__footer section2__footer">
-          <a class="scrolldown section2__scrolldown" href="#section3">
-            <img class="scrolldown__icon" src="img/arrow-down.svg" alt="">
-            <span class="scrolldown__text">
-              Время<br>
-              действовать!
-            </span>
-          </a>
-        </footer>
-        <!-- /.section__footer section1__footer -->
-
-        <img class="section2__parallax1 parallax js-parallax" data-parallax-speed="2" 
-             src="img/section2/parallax1.png" alt="">
-        <img class="section2__parallax2 parallax js-parallax" data-parallax-speed="1" 
-             src="img/section2/parallax2.png" alt="">
-        <img class="section2__parallax3 parallax js-parallax" data-parallax-speed="-3" 
-             src="img/section2/parallax3.png" alt="">
+        <img class="section1__decor1" aria-hidden="true" src="img/ball1.png" alt="">
+  
       </div>
       <!-- /.container -->
     </section>
+    <!-- /.section1 -->
 
-    <section class="section section3" id="section3">
-      <div class="container">
-        <div class="section3__wrap">
-          <h2 class="section__title section3__title">
-            Я уже<br class="hide-sm">
-            зарегистрирован,<br>
-            что делать?
-          </h2>
+    <section class="section2" id="section2">
+      <h2 class="visually-hidden">TODO</h2>
 
-          <div class="tabs section3__tabs js-disabled">
-            <header class="tabs-header">
-              Как пригласить друзей:
-              <ul class="tabs-nav">
-                <li class="tabs-nav__item active">
-                  <button class="tabs-nav__btn">через соцсети</button>
-                </li>
-                <li class="tabs-nav__item">
-                  <button class="tabs-nav__btn">по ссылке</button>
-                </li>
-                <li class="tabs-nav__item">
-                  <button class="tabs-nav__btn">по почте</button>
-                </li>
-              </ul>
-            </header>
-            <!-- ./tabs-header -->
+      <div class="slider js-slider">
 
-            <div class="tabs-content">
-              <div class="section3__socials-wrap">
-                <h3 class="section3__socials-title">
-                  После регистриации вы сможете<br>
-                  пригласить друзей через удобную для вас<br>
-                  социальную сеть
-                </h3>
-                <ul class="socials section3__socials" aria-label="Социальные сети">
-                  <li class="socials__item">
-                    <a href="#" aria-label="Twitter">
-                      <img class="socials__icon" src="img/socials/tw.svg" alt="">
-                    </a>
-                  </li>
-                  <li class="socials__item">
-                    <a href="#" aria-label="ВКонтакте">
-                      <img class="socials__icon" src="img/socials/vk.svg" alt="">
-                    </a>
-                  </li>
-                  <li class="socials__item">
-                    <a href="#" aria-label="Facebook">
-                      <img class="socials__icon" src="img/socials/fb.svg" alt="">
-                    </a>
-                  </li>
-                  <li class="socials__item">
-                    <a href="#" aria-label="Одноклассники">
-                      <img class="socials__icon" src="img/socials/ok.svg" alt="">
-                    </a>
-                  </li>
-                </ul>
-                <!-- ./socials -->
-
-                <a class="btn section3__register" href="https://www.stoloto.ru/invite_friend?service=invite_friend&int=podval" target="_blank">
-                  Пригласить друга
-                </a>
+        <div class="slider-item slider__item slider__item--1">
+          <div class="container">
+  
+            <div class="slider-item-wrap">
+  
+              <img class="slider-item__img slider-item__img--1" src="img/loteries-big/rapido.png" alt="">
+            
+              <div class="slider-item__text">
+                <p class="slider-item__subtitle">
+                  Суперприз:
+                  <b>1 020 567 <span aria-label="рублей" title="рублей">₽</span></b>
+                </p>
+                <p class="slider-item__p">
+                  Цена от 150 <span aria-label="рублей" title="рублей">₽</span>
+                </p>
+                <p class="slider-item__p">
+                  Тиражи лотереи «Рапидо» проходят<br>
+                  каждые 15 минут, успейте выиграть!
+                </p>
+            
+                <footer class="slider-item__footer">
+                  <span class="slider-item__next">
+                    Тираж через <span class="js-next-time">3 часа 45 минут</span>
+                  </span>
+                  <button class="slider-item__btn slider-item__btn--stroke">Выиграть быстрее!</button>
+                </footer>
+                <!-- /.slider-item__footer -->
               </div>
-              <!-- /.section3__socials-wrap -->
-            </div>
-            <!-- /.tabs-content -->
             
-            <div class="tabs-content">
-              <h3 class="section3__socials-title">
-                После того, как вы зарегистрируетесь,<br>
-                мы сможем сгенерировать уникальную ссылку.<br>
-                Скопируйте ее и отправьте другу.
-              </h3>
-
-              <a class="btn section3__register" href="https://www.stoloto.ru/invite_friend?service=invite_friend&int=podval" target="_blank">
-                Пригласить друга
-              </a>
+              <aside class="slider-item-fact">
+                <b class="slider-item-fact__title">Кстати:</b>
+                <p class="slider-item-fact__text">
+                  Это лотерея с повышенным<br>
+                  призовым фондом, в который идут 67%<br>
+                  с каждого купленного билета.
+                </p>
+              </aside>
+              <!-- /.slider-item-fact -->
+  
             </div>
-            <!-- /.tabs-content -->
-            
-            <div class="tabs-content">
-              <h3 class="section3__socials-title">
-                Приглашение будет выслано на почту<br>
-                вашего друга которую вы укажете.<br>
-                Но сначала вам надо зарегистрироваться<br>
-                самим!
-              </h3>
-              
-              <a class="btn section3__register" href="https://www.stoloto.ru/invite_friend?service=invite_friend&int=podval" target="_blank">
-                Пригласить друга
-              </a>
-            </div>
-            <!-- /.tabs-content -->
-
+            <!-- /.slider-item-wrap -->
           </div>
-          <!-- /.tabs -->
+          <!-- /.container -->
         </div>
-        <!-- /.section3__wrap -->
-
-        <footer class="section__footer section3__footer">
-          <a class="scrolldown section3__scrolldown" href="#section4">
-            <img class="scrolldown__icon" src="img/arrow-down.svg" alt="">
-            <span class="scrolldown__text">
-              Крутите,<br>
-              если остались<br>
-              вопросы
-            </span>
-          </a>
-        </footer>
-        <!-- /.section__footer section3__footer -->
-
-        <img class="section3__parallax1 parallax js-parallax" data-parallax-speed="0.85" 
-             src="img/section3/parallax1.png" alt="">
-        <img class="section3__parallax2 parallax js-parallax" data-parallax-speed="1.5" 
-             src="img/section3/parallax2.png" alt="">
-      </div>
-      <!-- /.container -->
-    </section>
-
-    <section class="section section4" id="section4">
-      <div class="container">
-        <h2 class="section__title section4__title">Важные вопросы:</h2>
-
-        <div class="qna section4__qna js-disabled">
-
-          <div class="qna-item qna__item">
-            <div class="qna-item__main-text">
-              <h3 class="qna-item__question">Кого можно позвать?</h3>
-              <p class="qna-item__answer">
-                Приглашайте друзей и близких,<br>
-                которые ещё не зарегистрировались<br>
-                на сайте <a href="http://stoloto.ru" target="_blank">stoloto.ru</a>
-              </p>
+        <!-- /.slider-item -->
+  
+        <div class="slider-item slider__item slider__item--2">
+          <div class="container">
+        
+            <div class="slider-item-wrap">
+        
+              <img class="slider-item__img slider-item__img--2" src="img/loteries-big/rusloto.png" alt="">
+        
+              <div class="slider-item__text">
+                <p class="slider-item__subtitle">
+                  Джекпот:
+                  <b>700 000 000 <span aria-label="рублей" title="рублей">₽</span></b>
+                </p>
+                <p class="slider-item__p">
+                  Цена от 100 <span aria-label="рублей" title="рублей">₽</span>
+                </p>
+                <p class="slider-item__p">
+                  «Русское лото» — лотерея из детства,<br>
+                  в которую играет вся страна.<br>
+                  Прикоснитесь к легенде!
+                </p>
+        
+                <footer class="slider-item__footer">
+                  <span class="slider-item__next">
+                    Следующий тираж<br>
+                    на канале НТВ <span class="js-next-time">в воскресенье в 8:20</span>
+                  </span>
+                  <button class="slider-item__btn">Играть сейчас</button>
+                </footer>
+                <!-- /.slider-item__footer -->
+              </div>
+        
+              <aside class="slider-item-fact">
+                <b class="slider-item-fact__title">Кстати:</b>
+                <p class="slider-item-fact__text">
+                  Старейшая лотерея с трансляцией розыгрышей<br>
+                  на отечественном телевидении,продолжающая<br>
+                  старинную традицию семейной игры в лото.<br>
+                  В октябре 2019 года лотерее исполнилось 25 лет.<br>
+                  Бессменный ведущий «Русского лото» — Михаил<br>
+                  Борисов.
+                </p>
+              </aside>
+              <!-- /.slider-item-fact -->
+        
             </div>
-            <!-- /.qna-item__main-text -->
-
-            <figure class="qna-item-img qna-item-img--1">
-              <img src="img/qna/1.png" alt="">
-              <figcaption class="qna-item-img__caption">
-                А вот котов звать нельзя,<br>
-                даже если они ну очень близкие
-              </figcaption>
-            </figure>
-
-            <a class="btn qna-item__btn" href="https://www.stoloto.ru/registration" target="_blank">Понятно, позвать человеков</a>
+            <!-- /.slider-item-wrap -->
           </div>
-          <!-- /.qna-item.qna__item -->
-          
-          <div class="qna-item qna__item">
-            <div class="qna-item__main-text">
-              <h3 class="qna-item__question">Сколько бонусов я получу?</h3>
-              <p class="qna-item__answer">
-                За каждого участника, купившего билеты<br>
-                на сумму от 150 рублей в течение трёх<br>
-                дней по вашему приглашению,<br>
-                вы получите 1 спецбонус и 9 бонусов.
-              </p>
-            </div>
-            <!-- /.qna-item__main-text -->
-
-            <figure class="qna-item-img qna-item-img--2">
-              <img src="img/qna/2.png" alt="">
-              <figcaption class="qna-item-img__caption">
-                Никаких сюрпризов,<br>
-                сплошная приятная предсказуемость!
-              </figcaption>
-            </figure>
-
-            <a class="btn qna-item__btn" href="https://www.stoloto.ru/registration" target="_blank">
-              Позвать друзей за бонусы
-            </a>
-          </div>
-          <!-- /.qna-item.qna__item -->
-
-          <div class="qna-item qna__item">
-            <div class="qna-item__main-text">
-              <h3 class="qna-item__question">На что я могу потратить бонусы?</h3>
-              <p class="qna-item__answer">
-                Бонусами и спецбонусами можно<br>
-                оплачивать лотерейные билеты.<br>
-                А каждый билет это ваш шанс<br>
-                выиграть дом, квартиру, автомобиль<br>
-                или миллионы рублей.
-              </p>
-            </div>
-            <!-- /.qna-item__main-text -->
-          
-            <figure class="qna-item-img qna-item-img--3">
-              <img src="img/qna/3.png" alt="">
-              <figcaption class="qna-item-img__caption">
-                Почти как деньги,<br>
-                только бонусы
-              </figcaption>
-            </figure>
-          
-            <a class="btn qna-item__btn" href="https://www.stoloto.ru/registration" target="_blank">Cтать бонусолионером</a>
-          </div>
-          <!-- /.qna-item.qna__item -->
-
-          <div class="qna-item qna__item">
-            <div class="qna-item__main-text">
-              <h3 class="qna-item__question">
-                Сколько друзей я могу<br>
-                пригласить в день?
-              </h3>
-              <p class="qna-item__answer">
-                По почте можно приглашать до 10 друзей<br>
-                в день. С помощью ссылки или социальных<br>
-                сетей вы можете звать сколько захотите друзей.
-              </p>
-            </div>
-            <!-- /.qna-item__main-text -->
-          
-            <figure class="qna-item-img qna-item-img--4">
-              <img src="img/qna/4.png" alt="">
-              <figcaption class="qna-item-img__caption">
-                Так вот в чем смысл<br>
-                дружбы!
-              </figcaption>
-            </figure>
-          
-            <a class="btn qna-item__btn" href="https://www.stoloto.ru/registration" target="_blank">Звать друзей скорее</a>
-          </div>
-          <!-- /.qna-item.qna__item -->
-
-          <div class="qna-item qna__item">
-            <div class="qna-item__main-text">
-              <h3 class="qna-item__question">Что получит мой друг?</h3>
-              <p class="qna-item__answer">
-                Получит количество бонусов,<br>
-                равное стоимости минимальной лотерейной<br>
-                ставки самого дорогого билета<br>
-                из его первой покупки.
-              </p>
-            </div>
-            <!-- /.qna-item__main-text -->
-          
-            <figure class="qna-item-img qna-item-img--5">
-              <img src="img/qna/5.png" alt="">
-              <figcaption class="qna-item-img__caption">
-                Потом друг еще мемуары<br>
-                напишет, как получил<br>
-                первый бонус
-              </figcaption>
-            </figure>
-          
-            <a class="btn qna-item__btn" href="https://www.stoloto.ru/registration" target="_blank">Посоветовать другу</a>
-          </div>
-          <!-- /.qna-item.qna__item -->
-
-          <div class="qna-item qna__item">
-            <div class="qna-item__main-text">
-              <h3 class="qna-item__question">
-                Сколько времени<br>
-                действуют бонусы?
-              </h3>
-              <p class="qna-item__answer">
-                Спецбонус действует 10 дней.<br>
-                Бонусы действуют полгода.
-              </p>
-            </div>
-            <!-- /.qna-item__main-text -->
-          
-            <figure class="qna-item-img qna-item-img--6">
-              <img src="img/qna/6.png" alt="">
-              <figcaption class="qna-item-img__caption">
-                Кто успел — тот и съел
-              </figcaption>
-            </figure>
-          
-            <a class="btn qna-item__btn" href="https://www.stoloto.ru/registration" target="_blank">Поторопиться</a>
-          </div>
-          <!-- /.qna-item.qna__item -->
-
-          <div class="qna-item qna__item">
-            <div class="qna-item__main-text">
-              <h3 class="qna-item__question">
-                Кто может отправить<br>
-                приглашение?
-              </h3>
-              <p class="qna-item__answer">
-                Вы можете приглашать друзей, если у вас<br>
-                есть личный кабинет и вы покупали<br>
-                лотерейные билеты на сайте <a href="http://stoloto.ru" target="_blank">stoloto.ru</a>
-              </p>
-            </div>
-            <!-- /.qna-item__main-text -->
-          
-            <figure class="qna-item-img qna-item-img--7">
-              <img src="img/qna/7.png" alt="">
-              <figcaption class="qna-item-img__caption">
-                <b>YES! You can!*</b>
-                * Да, ты можешь!<br><br class="sm-only">
-                Тут мы шутим одновременно<br>
-                над старым плакатом и плакатом<br>
-                предвыборной кампании президента<br>
-                Обамы
-              </figcaption>
-            </figure>
-          
-            <a class="btn qna-item__btn" href="https://www.stoloto.ru/registration" target="_blank">Воспользоваться правом</a>
-          </div>
-          <!-- /.qna-item.qna__item -->
-
+          <!-- /.container -->
         </div>
-        <!-- /.qna -->
+        <!-- /.slider-item -->
+
+        <div class="slider-item slider__item slider__item--3">
+          <div class="container">
+        
+            <div class="slider-item-wrap">
+        
+              <img class="slider-item__img slider-item__img--3" src="img/loteries-big/45.png" alt="">
+        
+              <div class="slider-item__text">
+                <p class="slider-item__subtitle">
+                  Суперприз:
+                  <b>121 496 097 <span aria-label="рублей" title="рублей">₽</span></b>
+                </p>
+                <p class="slider-item__p">
+                  Цена от 100 <span aria-label="рублей" title="рублей">₽</span>
+                </p>
+                <p class="slider-item__p">
+                  «Гослото «6 из 45» — лотерея с историей<br>
+                  и многомиллионным суперпризом.<br>
+                  Не упустите!
+                </p>
+        
+                <footer class="slider-item__footer">
+                  <span class="slider-item__next">
+                    Тираж через <span class="js-next-time">3 часа 45 минут</span>
+                  </span>
+                  <button class="slider-item__btn">К миллионам!</button>
+                </footer>
+                <!-- /.slider-item__footer -->
+              </div>
+        
+              <aside class="slider-item-fact">
+                <b class="slider-item-fact__title">Кстати:</b>
+                <p class="slider-item-fact__text">
+                  Известна одними из самых крупных выигрышей<br>
+                  в России. Более 364 000 000 рублей — крупнейший<br>
+                  суперприз, разыгранный 21 мая 2017 года.<br>
+                  Этот колоссальный выигрыш достался<br>
+                  победителю из Сочи.
+                </p>
+              </aside>
+              <!-- /.slider-item-fact -->
+        
+            </div>
+            <!-- /.slider-item-wrap -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.slider-item -->
+
+        <div class="slider-item slider__item slider__item--4">
+          <div class="container">
+        
+            <div class="slider-item-wrap">
+        
+              <img class="slider-item__img slider-item__img--4" src="img/loteries-big/20.png" alt="">
+        
+              <div class="slider-item__text">
+                <p class="slider-item__subtitle">
+                  Суперприз
+                  <b>343 453 545 <span aria-label="рублей" title="рублей">₽</span></b>
+                </p>
+                <p class="slider-item__p">
+                  Цена от 100 <span aria-label="рублей" title="рублей">₽</span>
+                </p>
+                <p class="slider-item__p">
+                  «Гослото «4 из 20» — это огромные<br>
+                  выигрыши по всей России.<br>
+                  Станьте мультимиллионером!
+                </p>
+        
+                <footer class="slider-item__footer">
+                  <span class="slider-item__next">
+                    Тираж через <span class="js-next-time">3 часа 45 минут</span>
+                  </span>
+                  <button class="slider-item__btn slider-item__btn--stroke">Действуйте!</button>
+                </footer>
+                <!-- /.slider-item__footer -->
+              </div>
+        
+              <aside class="slider-item-fact">
+                <b class="slider-item-fact__title">Кстати:</b>
+                <p class="slider-item-fact__text">
+                  Вероятность выиграть 1 к 3,4 — выше,<br>
+                  чем в остальных лотереях «Гослото».
+                </p>
+                <p class="slider-item-fact__text">
+                  Многомиллионный суперприз и огромное<br>
+                  количество победителей в каждом тираже.<br>
+                  300 000 000 рублей выиграл житель<br>
+                  Новосибирска 29 мая 2017 года.
+                </p>
+              </aside>
+              <!-- /.slider-item-fact -->
+        
+            </div>
+            <!-- /.slider-item-wrap -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.slider-item -->
 
       </div>
-      <!-- /.container -->
+      <!-- /.slider -->
     </section>
+    <!-- /.section2 -->
   </main>
+  <!-- /.main -->
 
   <footer class="footer">
     <div class="container">
-      <div class="footer__wrap">
-        <a href="https://www.stoloto.ru" target="_blank">
-          <img class="logo footer__logo" src="img/logo.svg" alt="Столото">
+      <div class="footer-wrap">
+
+        <a class="logo footer__logo" href="#" target="_blank">
+          <img class="logo__img" src="img/logo.png" alt="Столото">
         </a>
   
-        <a class="footer__link" href="http://www.stoloto.ru/files/documents/politika_v_otnoshenii_obrabotki_personalnyh_dannyh.pdf" target="_blank">
+        <a class="footer__doc" href="#" target="_blank">
           Политика в отношении обработки<br>
           персональных данных
         </a>
   
-        <small>© 2019 АО «ТК «Центр»</small>
+        <small class="footer__copyright">
+          © 2019 АО «ТК «Центр»
+        </small>
+
+        <div class="socials footer__socials">
+          <h3 class="socials__title">Столото в соцсетях</h3>
+          <ul class="socials-list">
+            <li class="socials-item">
+              <a href="#" target="_blank"><img src="img/socials/tw.png" alt=""></a>
+            </li>
+            <li class="socials-item">
+              <a href="#" target="_blank"><img src="img/socials/vk.png" alt=""></a>
+            </li>
+            <li class="socials-item">
+              <a href="#" target="_blank"><img src="img/socials/fb.png" alt=""></a>
+            </li>
+            <li class="socials-item">
+              <a href="#" target="_blank"><img src="img/socials/ok.png" alt=""></a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.socials -->
+        
       </div>
-      <!-- /.footer__wrap -->
+      <!-- /.footer-wrap -->
 
-      <img 
-        class="footer__parallax1 parallax js-parallax" data-parallax-speed="2" 
-        src="img/footer/parallax1.png" alt="">
-      <img 
-        class="footer__parallax2" data-parallax-speed="-3.5" 
-        src="img/footer/parallax2.png" alt="">
-
+      <div class="footer__decor-cropper">
+        <img aria-hidden="true" src="img/footer-ball.png" alt="">
+      </div>
+      <!-- /.footer__decor-cropper -->
     </div>
     <!-- /.container -->
   </footer>
+  <!-- /.footer -->
+
+  <a class="visually-hidden" href="https://github.com/persiklover" target="_blank">
+    GitHub разработчика
+  </a>
 
   <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/owlcarousel/js/owl.carousel.min.js"></script>
-  <script src="js/main.min.js?v=3"></script>
-  <!-- made by: https://github.com/persiklover -->
+  <script src="lib/owl.carousel/js/owl.carousel.min.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>
