@@ -35,7 +35,7 @@
       top:   -5rem
       width:  18.8rem
       height: 18.8rem
-      background: url(../img/clover.png) no-repeat center / cover
+      background: $body-bg-color url(../img/clover.png) no-repeat center / cover
 
       +sm
         left: -18rem
@@ -77,3 +77,46 @@
       bottom: auto
       top:  -13rem
       right: -5rem
+
+  &__decor2
+    position: absolute
+    z-index: 3
+    right:  -14rem
+    bottom:  32rem
+    width:  29.6rem
+    height: 29.1rem
+
+    +sm
+      bottom: -15rem
+      z-index: -1
+  
+  &__decor3
+    position: absolute
+    z-index: 3
+    left:    0
+    bottom:  22rem
+    width:  19.4rem
+    height: 35.5rem
+    +no-select
+
+    +sm
+      width:  19.4rem * .7
+      height: 35.5rem * .7
+      bottom: auto
+      top: 30rem
+
+  &__light1
+    position: absolute
+    z-index: -1
+    left: 0
+    top:  0
+    width:  35.8rem
+    height: 39.6rem
+  
+  &__light2
+    position: absolute
+    z-index: -1
+    right: 0
+    top:   0
+    width: 46.5rem
+    height: 45.7rem
