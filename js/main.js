@@ -21,14 +21,6 @@ $(function() {
     scrollTo($(this).attr("href"));
   });
 
-  $(".js-show-info").click(function() {
-    $(this).next(".loteries-item-overlay").addClass("visible");
-  });
-  
-  $(".js-hide-info").click(function() {
-    $(this).parents(".loteries-item-overlay").removeClass("visible");
-  });
-
   var $slider = $(".js-slider"); 
   function updateSlider(event) {
     if (event.page.index > 0) {
@@ -68,12 +60,17 @@ $(function() {
       updateSlider(event);
     });
 
+  $(".js-show-info").click(function (e) {
+    var to = $(this).attr("data-slide-i").match(/(\d+)/)[0] - 1;
+    
+    $slider.trigger('to.owl.carousel', to);
+  });
+
   // Столото API
   $.ajax({
-    url:  "https://api.stoloto.ru/mobile/api/v28/service/games/info-new",
+    url:     "https://api.stoloto.ru/mobile/api/v28/service/games/info-new",
     success: function(content) {
-      console.log(content);
-      
+      // console.log(content);
 
       function num2text(num) {
         var text = formatNumber(num).split(" ");
@@ -109,7 +106,7 @@ $(function() {
       }
 
       function updateLottery(selector, data) {
-        console.log(data);
+        // console.log(data);
 
         $(selector).each(function(i, el) {
           
