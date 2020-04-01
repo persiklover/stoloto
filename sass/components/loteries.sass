@@ -89,6 +89,8 @@
       color: #fff
       font-size: 2.4rem
 
+      transition: background .2s ease-in
+
       cursor: pointer
 
       &:hover,
@@ -96,7 +98,7 @@
         background: lighten(#00a014, 10)
 
     &__more
-      display: block
+      position: relative
       margin: 0 auto
       background: none
       border: none
@@ -104,13 +106,29 @@
 
       color: #fffffe
       font-size: 1.9rem
-      text-decoration: underline
 
       cursor: pointer
 
+      &::before
+        content: ''
+        display: block
+        position: absolute
+        left:   0
+        bottom: 0
+        width:  100%
+        height: .1em
+        background: currentColor
+
+        transform: scaleX(1)
+        transform-origin: left
+
+        transition:  transform .2s ease-in
+        will-change: transform
+
       &:hover,
       &:focus
-        text-decoration: none
+        &::before
+          transform: scaleX(0)
 
     &-overlay
       display: none

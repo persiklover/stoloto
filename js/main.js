@@ -62,6 +62,7 @@ $(function() {
 
   $(".js-show-info").click(function (e) {
     var to = $(this).attr("data-slide-i").match(/(\d+)/)[0] - 1;
+    console.log(to);
     
     $slider.trigger('to.owl.carousel', to);
   });
