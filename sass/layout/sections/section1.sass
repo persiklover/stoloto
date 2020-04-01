@@ -73,13 +73,14 @@
     bottom: -19rem
     width:  50.1rem
     height: 50.1rem
+    +no-select
 
     +sm
       width:  24.9rem
       height: 24.9rem
       bottom: auto
-      top:  -13rem
-      right: -5rem
+      top:   -12rem
+      right: -10rem
 
   &__decor2
     position: absolute
@@ -88,6 +89,7 @@
     bottom:  32rem
     width:  29.6rem
     height: 29.1rem
+    +no-select
 
     +sm
       bottom: -15rem
@@ -115,6 +117,13 @@
     top:  0
     width:  35.8rem
     height: 39.6rem
+    +no-select
+
+    +sm
+      top:    auto
+      bottom: -10rem
+      transform: rotate(-90deg)
+
   
   &__light2
     position: absolute
@@ -123,3 +132,4 @@
     top:   0
     width: 46.5rem
     height: 45.7rem
+    +no-select
